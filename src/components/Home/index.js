@@ -1,7 +1,11 @@
-import { Container } from '@mui/material'
+import { Button, Container } from '@mui/material'
 
 const Home = () => {
-    return <Container />
+    return (
+        <Container>
+            <Button variant={'contained'}> Deneme </Button>
+        </Container>
+    )
 }
 
 export default Home
