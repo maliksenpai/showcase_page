@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import reportWebVitals from './reportWebVitals'
 import Home from './components/Home'
+import SearchArt from './components/Layout'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
     <React.StrictMode>
         <Home />
+        <SearchArt />
     </React.StrictMode>
 )
 
