@@ -1,10 +1,28 @@
-import { Button, Container } from '@mui/material'
+import IntroductionArea from '../../molecules/IntroductionArea'
+import { Container, Grid } from '@mui/material'
+import SearchArt from '../../molecules/SearchArt'
+import CuteImage from '../../molecules/CuteImage'
+import GalleryList from '../../molecules/GalleryList'
+import HelplessCharacterFAB from '../../atoms/HelplessCharacterFAB'
 
 const Home = () => {
     return (
-        <Container>
-            <Button variant={'contained'} > lets go </Button>
-        </Container>
+        <>
+            <CuteImage />
+            <Container sx={{ position: 'relative' }}>
+                <Grid
+                    layout
+                    flexDirection={'column'}
+                    display={'flex'}
+                    alignItems={'center'}
+                >
+                    <SearchArt />
+                    <IntroductionArea />
+                    <GalleryList />
+                    <HelplessCharacterFAB />
+                </Grid>
+            </Container>
+        </>
     )
 }
 
